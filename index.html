@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Online Examination System</h1>
+
+<div id="loginSection">
+    <h2>Student Login</h2>
+    <input id="studentName" placeholder="Student Name">
+    <input id="studentId" placeholder="Student ID">
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="examSection" class="hidden">
+    <h2>Welcome <span id="displayName"></span></h2>
+    Time Left: <span id="time">05:00</span>
+    <form id="examForm">
+        <div id="questions"></div>
+        <button type="button" onclick="submitExam()">Submit Exam</button>
+    </form>
+</div>
+
+<div id="resultSection" class="hidden">
+    <h2>Exam Result</h2>
+    <p>Name: <span id="resultName"></span></p>
+    <p>ID: <span id="resultId"></span></p>
+    <p>Total: <span id="total"></span></p>
+    <p>Correct: <span id="correct"></span></p>
+    <p>Wrong: <span id="wrong"></span></p>
+    <p>Unanswered: <span id="unanswered"></span></p>
+    <p>Marks: <span id="marks"></span></p>
+    <p>Percentage: <span id="percentage"></span>%</p>
+    <h2 id="status"></h2>
+    <button onclick="location.reload()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
